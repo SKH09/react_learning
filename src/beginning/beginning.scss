@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.App-header {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+}
+.buttoons{
+    display: flex;
+    border: 1px solid; 
+    padding:20px;
+    border-radius: 20px;
+    background: lavender;
+}
+.primary{
+    background: blue;
+    color: white;
+    font-size: 30px;
+    padding: 20px 40px;
+    border-radius: 20px;
+
+    &:hover{
+        background: rgb(146, 146, 255);
+        color: black;
+    }
+}
+
+.secondary{
+    background-color: yellow;
+    color: black;
+    border: solid;
+    font-size: 30px;
+    padding: 20px 40px;
+    border: solid;
+    border-radius: 20px;
+
+}
+.alert{
+    background-color: orange;
+    color: black;
+    border: dotted;
+    font-size: 30px;
+    padding: 20px 40px;
+    border-radius: 20px;
+
+}
+.danger{
+    background:red;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 20px 40px;
+    color: white;
+}
+
+.solid{
+    .primary{
+        border: 3px dotted red;
+        background-color: none;
+    }
+}
