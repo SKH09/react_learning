@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+button{
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 30px;
+    background: orange;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px black;
+    cursor: pointer;
+    transition: 0.1s ease-in ;
+
+    &:hover{
+        background-color: red;
+        border: 1px solid black;
+        box-shadow: 0;
+        border-radius: 15px;
+    }
+}
+p{
+    font-size: 32px;
+    padding-top: 20px;
+    font-style: italic;
+
+    &:hover{
+        font-style: normal;
+    }
+}
