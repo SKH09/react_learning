@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Form from './components/Form/Form';
+import Message from './components/message/Message';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div style={{display:'flex', justifyContent:'center',alignItems:'center',flexDirection:'column',gap:'150px', }} >
+      <Form/>
+      <Message/>
+    </div>
   </React.StrictMode>
 );
 

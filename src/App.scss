@@ -1,0 +1,27 @@
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+Button{
+    padding: 20px 40px;
+    font-size: 30px;
+    background-image: linear-gradient(white, yellow);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    transition: all 0.1s ease-in-out;
+
+    &:hover{
+        background-image: none;
+        background-color: black;
+        color: yellow;
+    }
+}

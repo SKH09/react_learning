@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Gallery from './components/Buttons/Gallery';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Toolbar 
+    onPlayMovie={() => alert ('Playing!!')}
+    onUploadImage={() => alert ('Uploading!!')}
+    /> 
+        <Gallery />
+    </>
   );
 }
 
-export default App;
+ function Toolbar({onPlayMovie, onUploadImage}){
+  return (
+  <div className='button-wrapper'>
+    <div className='buttons'>
+      <Button className="video" onClick={onPlayMovie}>Play Movie</Button>
+      <Button className="img" onClick={onUploadImage}>Upload Image</Button>
+    </div>
+  </div>
+  );
+}
+function Button({ onClick, children }) {
+  return (
+    <button onClick={onClick}>
+      {children}
+    </button>
+  );
+}
