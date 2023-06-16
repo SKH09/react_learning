@@ -1,0 +1,27 @@
+.app-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+textarea{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.btn-form{
+    background-color: yellow;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(192, 192, 192);
+
+    &:hover{
+        background-color: gold;
+
+    }
+
+}

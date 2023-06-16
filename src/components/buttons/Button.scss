@@ -1,0 +1,28 @@
+.number{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+.numberDisplay{
+    font-size:50px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    width: 5%;
+}
+}
+.numberButton{
+    background-color: yellow;
+    color: black;
+    padding: 10px 10px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+    cursor:pointer;
+    box-shadow: 0px 0px 8px black;
+    transition: all 0.1s ease-in-out;
+    &:hover{
+        background:black;
+        color: yellow;
+    }
+}
