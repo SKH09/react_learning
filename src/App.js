@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+//import { useState } from 'react';
 import './App.css';
-
+import Calc from './components/Calculator/Calc';
+//import Forms1 from './components/Forms/FirstCom';
+//import Forms2 from './components/Forms/SecondCom';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/* const [value, setValue] = useState(0);
+
+function increment() {
+  setValue(value + 1)
+console.log(increment)
 }
 
+function decrement() {
+  setValue(value - 1)
+console.log(decrement)
+}
+
+  return (
+    <div className="App">
+      <Forms1 value = {value} />
+      <Forms2 increment = {increment} decrement = {decrement}/>
+    </div>
+  );
+} */
+<Calc />
+}
 export default App;

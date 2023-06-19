@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: beige;
+}
+.resultBox{
+    font-size: 26px;
+    padding: 30px 80px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.buttonBox{
+    box-shadow: 1px 1px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: blanchedalmond;
+
+}
+.incre{
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgb(211, 234, 255);
+    transition: all 0.1s ease-in-out ;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+    }
+
+}
+.decre{
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgb(211, 234, 255);
+    transition: all 0.1s ease-in-out ;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+    }
+}
